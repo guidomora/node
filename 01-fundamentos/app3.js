@@ -17,3 +17,4 @@ const filter2 = content.match(/react/gi ?? []).length;
 console.log(filter2);
 
 
+// npm i -D nodemon ----------> la D significa que es de desaroollo, nodemon es para que se reinicie el servidor

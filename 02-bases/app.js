@@ -50,8 +50,23 @@ const { buildPerson } = require("./js-foundation/05-factory")
 // console.log(person);
 
 // --------------------------------------
-const {getPokemonById} = require("./js-foundation/06-promises")
+// const {getPokemonById} = require("./js-foundation/06-promises")
 
-getPokemonById(1, (pokemon) => {
-    console.log({pokemon});
-})
+// getPokemonById(7)
+//     .then((pokemon) => {
+//         console.log(pokemon);
+//     })
+//     .catch((error) => {
+//         console.log("Error");
+//     })
+//     .finally(() => {
+//         console.log("Finalizado");
+//     })
+
+// --------------------------------------
+
+const {buildLogger} = require("./plugins")
+
+const logger = buildLogger("app.js") // el argumento es el nombre del servicio
+
+logger.log("Hola mundo")
